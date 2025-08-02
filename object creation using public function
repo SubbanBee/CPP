@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class student     // created a class with classname as student
+{
+	//data member
+	public:
+	string name;
+	int rno;
+	//member function
+	// as it is public funtion we can access it directly
+	void introduce(){
+		cout<<"My name is: "<<name<<endl;
+		cout<<"Roll no:"<<rno<<endl;
+	}
+};
+int main()
+{
+	student subban;
+	subban.name="Subban";
+	subban.rno=118;
+	subban.introduce();
+	return 0;
+}
